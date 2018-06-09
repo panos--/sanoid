@@ -1041,7 +1041,7 @@ sub getsendsize {
 		$snaps = "-t $receivetoken";
 	}
 
-	my $getsendsizecmd = "$sourcessh $mysudocmd $zfscmd send -nP $snaps";
+	my $getsendsizecmd = "$sourcessh $mysudocmd $zfscmd send -nvP $snaps";
 	if ($debug) { print "DEBUG: getting estimated transfer size from source $sourcehost using \"$getsendsizecmd 2>&1 |\"...\n"; }
 
 	open FH, "$getsendsizecmd 2>&1 |";
