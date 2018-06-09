@@ -55,7 +55,7 @@ my $pscmd = '/bin/ps';
 my $pvcmd = '/usr/bin/pv';
 my $mbuffercmd = '/usr/bin/mbuffer';
 my $sudocmd = '/usr/bin/sudo';
-my $mbufferoptions = '-q -s 128k -m 16M 2>/dev/null';
+my $mbufferoptions = '-q -s 128k -m 16M';
 # currently using ls to check for file existence because we aren't depending on perl
 # being present on remote machines.
 my $lscmd = '/bin/ls';
